@@ -1,0 +1,3 @@
+/home/qn/C++_Learning/Lab/Week4/Lab1/build/CMakeFiles/testdemo.dir
+/home/qn/C++_Learning/Lab/Week4/Lab1/build/CMakeFiles/edit_cache.dir
+/home/qn/C++_Learning/Lab/Week4/Lab1/build/CMakeFiles/rebuild_cache.dir
