@@ -9,5 +9,6 @@ int main()
     cout << "This is main:" << endl;
     cout << "The factorial of 5 is: " << factorial(5) << endl;
     cout << "The factorial of 10 is: " << factorial(10) << endl;
+    
     return 0;
 }
