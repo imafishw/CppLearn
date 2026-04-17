@@ -7,8 +7,11 @@ typedef struct {
     bool male;
 } Student;
 
+// const int 和 int const 是一样的. 
+// 一般写成 const int, 以保持一致性
 
-
+// const int *p → const 离 int 近 → 锁内容
+// int *const p → const 离 p 近 → 锁指针
 
 int main() {
     Student lzh = {
