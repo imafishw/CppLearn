@@ -85,7 +85,6 @@ void foo(){
 
 一定记得有申请有释放
 
-
 #### C++ Style
 
 ![alt text](./img/c++Style.png)
@@ -97,3 +96,7 @@ delete p; // 释放这个内存
 ```
 
 ![alt text](./img/delete.png)
+psa1是类或者结构体的对象数组，delete psa1 调用第一个元素的析构函数来释放资源.
+
+delete []psa2 是用来释放数组的内存，delete []psa2 会调用数组中每个元素的析构函数来释放资源。
+delete 只能释放 new 分配的内存，不能释放 malloc 分配的内存，否则会导致未定义行为。同样，free 只能释放 malloc 分配的内存，不能释放 new 分配的内存，否则也会导致未定义行为。

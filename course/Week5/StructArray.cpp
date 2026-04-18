@@ -16,6 +16,7 @@ typedef struct {
 // 一定要小心指针的使用。
 int main() {
     Student class3[SIZE];
+    class3[0].born = 2000;
     student p = &class3[0];
     student p0 = &class3[1];
     student p1 = &class3[2];
