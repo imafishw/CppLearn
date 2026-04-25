@@ -95,8 +95,21 @@ int *p = new int; // 在堆上分配一个 int 大小的内存，返回指向它
 delete p; // 释放这个内存
 ```
 
+![alt text](./img/new[].jpg)
+
+```C++
+int *ptr = new int[10]{1,2,3} 
+// 在堆上分配一个 int 数组，包含 10 个元素，并用 {1,2,3} 
+// 初始化前 3 个元素，剩下的元素默认初始化为 0.
+delete []ptr; // 释放这个数组
+
+```
+
 ![alt text](./img/delete.png)
 psa1是类或者结构体的对象数组，delete psa1 调用第一个元素的析构函数来释放资源.
 
 delete []psa2 是用来释放数组的内存，delete []psa2 会调用数组中每个元素的析构函数来释放资源。
+数组申请用new[]，释放必须用 delete[] 指针;
+
 delete 只能释放 new 分配的内存，不能释放 malloc 分配的内存，否则会导致未定义行为。同样，free 只能释放 malloc 分配的内存，不能释放 new 分配的内存，否则也会导致未定义行为。
+
